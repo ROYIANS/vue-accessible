@@ -1,16 +1,16 @@
 {
-  "name": "boot-vue",
+  "name": "vue-accessible",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "packageManager": "pnpm@8.7.6",
-  "description": "Vue starter template with UnoCSS",
+  "description": "Web accessibility tools for Vue3",
   "keywords": [
-    "BootVue",
-    "boot-vue",
-    "vite",
-    "unocss",
-    "fast",
-    "boot"
+    "Web accessibility",
+    "Accessibility",
+    "vue-accessible",
+    "WCAG",
+    "Vue",
+    "tools"
   ],
   "main": "src/main.ts",
   "scripts": {
