@@ -129,7 +129,7 @@
     "naive-ui": "^2.34.4",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1",
-    "rollup": "^3.29.2",
+    "rollup": "^3.29.3",
     "rollup-plugin-esbuild": "^5.0.0",
     "superagent": "^8.1.2",
     "ts-jest": "^29.1.1",
