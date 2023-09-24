@@ -125,7 +125,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "katex": "^0.16.8",
     "lint-staged": "^14.0.1",
-    "marked": "^8.0.1",
+    "marked": "^9.0.3",
     "naive-ui": "^2.34.4",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1",
