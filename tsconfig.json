@@ -1,29 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "jsx": "preserve",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "vue-accessible": [
+        "./src"
+      ]
     },
-    "types": [
-      "vitest",
-      "vite/client",
-      "unplugin-icons/types/vue",
-      "@intlify/unplugin-vue-i18n/messages"
-    ],
-    "resolveJsonModule": true,
-    "allowJs": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "skipLibCheck": true
-  },
-  "exclude": ["dist", "node_modules"]
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "target": "ES6",
+    "esModuleInterop": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ]
+  }
 }
