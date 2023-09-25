@@ -10,7 +10,7 @@ Web accessibility tools for Vue3: <b>Vue-Accessible</b><br>
 ## 特性
 
 - ⚡ [闪电般的速度](#特性)：使用 Vue 3、Vite 和 pnpm 构建，速度飞快 🔥
-- 👍 刚刚创立仓库，准备出发
+- 👍 刚刚创立仓库，准备出发!
 
 ## 项目结构
 
