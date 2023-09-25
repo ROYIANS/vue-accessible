@@ -11,10 +11,13 @@
         <n-text class="col-header" depth="1">
           {{ t('link') }}
         </n-text>
-        <n-button :href="t('vueLink')" download tag="a" text>
+        <n-button download href="/" tag="a" text>
+          {{ t('home') }}
+        </n-button>
+        <n-button :href="t('vueLink')" target="_blank" tag="a" text>
           Vue3
         </n-button>
-        <n-button download href="https://www.naiveui.com/" tag="a" text>
+        <n-button href="https://www.naiveui.com/" target="_blank" tag="a" text>
           Naive UI
         </n-button>
       </div>
@@ -39,6 +42,9 @@
         <n-button :href="repoUrl" tag="a" target="_blank" text>
           GitHub
         </n-button>
+        <n-button :href="giteeUrl" tag="a" target="_blank" text>
+          Gitee
+        </n-button>
       </div>
       <div class="footer-links-col footer-links-col--last">
         <n-text class="col-header" depth="1">
@@ -60,10 +66,10 @@
 
 <script lang="js">
 import { defineComponent } from 'vue'
-import { version } from 'naive-ui'
+import { version } from 'vue-accessible'
 import { i18n } from '../../utils/composables'
 import { push } from '../../store'
-import { repoUrl } from '../../utils/github-url'
+import { repoUrl, giteeUrl } from '../../utils/github-url'
 
 export default defineComponent({
   props: {
@@ -73,10 +79,12 @@ export default defineComponent({
     return {
       version,
       repoUrl,
+      giteeUrl,
       push,
       ...i18n({
         'zh-CN': {
           link: '链接',
+          home: '首页',
           help: '帮助',
           community: '社区',
           contact: '联系我们',
@@ -88,6 +96,7 @@ export default defineComponent({
         },
         'en-US': {
           link: 'Links',
+          home: 'Home',
           help: 'Help',
           community: 'Community',
           contact: 'Contact Us',

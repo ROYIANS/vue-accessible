@@ -77,15 +77,10 @@ export function createDocumentationMenuOptions ({ lang, theme, mode }) {
           path: '/installation'
         }
       ]
-    }
-  ])
-}
-
-export function createDemoPageOptions ({ lang, theme, mode }) {
-  return createItems(lang, theme, '/components', [
-    appendCounts({
-      zh: '无障碍组件',
-      en: 'Accessibility Components',
+    },
+    {
+      en: 'Components',
+      zh: '组件 & API',
       type: 'group',
       children: [
         {
@@ -95,6 +90,78 @@ export function createDemoPageOptions ({ lang, theme, mode }) {
           path: '/accessible-bar'
         }
       ]
-    })
+    }
   ])
+}
+
+export function createDemoPageOptions ({ lang, theme, mode }) {
+  return [
+    ...createItems(lang, theme, '', [
+      {
+        en: '← Home',
+        zh: '← 回到首页',
+        enSuffix: false,
+        path: '/'
+      }
+    ]),
+    ...createItems(lang, theme, '/demos', [
+      appendCounts({
+        zh: '文本演示页面',
+        en: 'Text Demo Pages',
+        type: 'group',
+        children: [
+          {
+            en: 'Page-1',
+            zh: '示例页面-1',
+            enSuffix: false,
+            path: '/page-1'
+          },
+          {
+            en: 'Page-2',
+            zh: '示例页面-2',
+            enSuffix: false,
+            path: '/page-2'
+          },
+          {
+            en: 'Page-3',
+            zh: '示例页面-3',
+            enSuffix: false,
+            path: '/page-3'
+          }
+        ]
+      }),
+      appendCounts({
+        zh: '媒体演示页面',
+        en: 'Media Demo Pages',
+        type: 'group',
+        children: [
+          {
+            en: 'Page-4',
+            zh: '示例页面-4',
+            enSuffix: false,
+            path: '/page-4'
+          }
+        ]
+      }),
+      appendCounts({
+        zh: '表单/表格演示页面',
+        en: 'Form/Table Demo Pages',
+        type: 'group',
+        children: [
+          {
+            en: 'Page-5',
+            zh: '示例页面-5',
+            enSuffix: false,
+            path: '/page-5'
+          },
+          {
+            en: 'Page-6',
+            zh: '示例页面-6',
+            enSuffix: false,
+            path: '/page-6'
+          }
+        ]
+      })
+    ])
+  ]
 }

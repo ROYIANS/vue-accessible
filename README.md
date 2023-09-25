@@ -3,13 +3,16 @@
 <img src='README.assets/logo.png' alt='Boot-Vue - Opinionated Vite Starter Template' width='150'/>
 </div>
 
-<p style='text-align: center'>
+<center>
+为您的网站添加无障碍/适老化的基础功能
+</center>
+<center>
 Web accessibility tools for Vue3: <b>Vue-Accessible</b><br>
-</p>
+</center>
 
 ## 特性
 
-- ⚡ [闪电般的速度](#特性)：使用 Vue 3、Vite 和 pnpm 构建，速度飞快 🔥
+- ⚡ 冲冲冲 🔥
 - 👍 刚刚创立仓库，准备出发!
 
 ## 项目结构

@@ -80,6 +80,14 @@ const themeRef = computed(() => {
   const { value } = themeNameRef
   return value === 'dark' ? darkTheme : null
 })
+const themeOverrideRef = ref({
+  common: {
+    primaryColor: '#009688',
+    primaryColorHover: '#01b7a6',
+    primaryColorPressed: '#006055',
+    primaryColorSuppl: '#006055'
+  }
+})
 
 // options
 const docOptionsRef = computed(() =>
@@ -122,7 +130,8 @@ export function siteSetup () {
     themeName: themeNameRef,
     theme: themeRef,
     locale: localeRef,
-    dateLocale: dateLocaleRef
+    dateLocale: dateLocaleRef,
+    themeOverride: themeOverrideRef
   }
 }
 

@@ -167,8 +167,7 @@ export default defineComponent({
           key: 'example',
           label: t('example'),
           icon: renderIcon('ri:flask-fill'),
-          path:
-            themeAndLocaleReg.exec(route.path)[0] + '/components/accessible-bar'
+          path: themeAndLocaleReg.exec(route.path)[0] + '/demos/page-1'
         }
       ]
     })
@@ -206,9 +205,7 @@ export default defineComponent({
         {
           key: 'example',
           label: t('example'),
-          path:
-            themeAndLocaleReg.exec(route.path)[0] +
-            '/components/accessible-bar',
+          path: themeAndLocaleReg.exec(route.path)[0] + '/demos/page-1',
           children: componentOptionsRef.value
         },
         {

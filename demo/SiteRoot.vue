@@ -1,13 +1,13 @@
 <template>
-  <component
-    :is="configProvider"
+  <n-config-provider
     :date-locale="dateLocale"
     :hljs="hljs"
     :locale="locale"
     :theme="theme"
     :theme-name="themeName"
+    :theme-overrides="themeOverride"
     class="demo"
-    namespace="naive-ui-doc"
+    namespace="vue-accessible-doc"
     preflight-style-disabled
   >
     <n-loading-bar-provider>
@@ -20,7 +20,7 @@
       </n-message-provider>
     </n-loading-bar-provider>
     <n-global-style />
-  </component>
+  </n-config-provider>
 </template>
 
 <script lang="js">

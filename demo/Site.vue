@@ -1,12 +1,13 @@
 <template>
   <n-layout :position="isMobile ? 'static' : 'absolute'" class="root-layout">
-    <site-header />
+    <site-header v-if="!isDemoPage" />
     <router-view />
   </n-layout>
 </template>
 
 <script lang="js">
-import { defineComponent, onMounted } from 'vue'
+import { defineComponent, onMounted, computed } from 'vue'
+import { useRoute } from 'vue-router'
 import { useLoadingBar } from 'naive-ui'
 import SiteHeader from './SiteHeader.vue'
 import { loadingBarApiRef } from './routes/router'
@@ -20,12 +21,16 @@ export default defineComponent({
   setup () {
     const loadingBar = useLoadingBar()
     const isMobileRef = useIsMobile()
+    const currentRoute = useRoute()
     onMounted(() => {
       loadingBarApiRef.value = loadingBar
       loadingBar.finish()
     })
     return {
-      isMobile: isMobileRef
+      isMobile: isMobileRef,
+      isDemoPage: computed(() => {
+        return currentRoute.path?.includes('/demos/')
+      })
     }
   }
 })
