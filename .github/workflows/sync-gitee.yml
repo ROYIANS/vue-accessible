@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - docs
+      - feat/v1
   create:
 
 jobs:
